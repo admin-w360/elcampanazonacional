@@ -11,7 +11,7 @@ import {useAppDispatch, useAppSelector} from "@/hooks/reduxHook";
 import {Link, useNavigate} from "react-router-dom";
 import {startSession} from "@/pages/landing/login/services";
 import {setUser} from "@/store/reducer/userSlice";
-import {Alert, Button} from "react-bootstrap";
+import {Alert, Button, Spinner} from "react-bootstrap";
 import InputCheck from "@/components/from/input/InputCheck";
 import * as Console from "console";
 
@@ -115,7 +115,7 @@ const Login: FC = () => {
                                 errorMessage={errors?.document?.message}
                                 label="* Numero de Documento"
                                 placeholder={"___._______._"}
-                                mask={"999.9999999.9"}
+                                mask={"999-9999999-9"}
                                 defaultValue=""
                             />
                         </div>
@@ -130,7 +130,19 @@ const Login: FC = () => {
                             />
                         </div>
                         <div className="my-4">
-                            <Button className="btn btn-primary px-5 pb-3 pcampa rounded-pill" type={"submit"}>INGRESAR</Button>
+                            <Button className="btn btn-primary px-5 pb-3 pcampa rounded-pill" type={"submit"}  disabled={isLoading}>
+                                {isLoading &&
+                                    <Spinner
+                                        as="span"
+                                        animation="border"
+                                        size="sm"
+                                        role="status"
+                                        aria-hidden="true"
+                                        className={"me-1"}
+                                    />
+                                }
+                                INGRESAR
+                            </Button>
                         </div>
                     </form>
                 </div>

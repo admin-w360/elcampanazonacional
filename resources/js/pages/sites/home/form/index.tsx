@@ -1,7 +1,7 @@
 import React, {FC, Fragment, useRef, useState} from "react";
 import {useTitle} from "@/hooks/pageHook";
 import {baseUrl} from "@/utils/request";
-import {Alert, Button} from "react-bootstrap";
+import {Alert, Button, Spinner} from "react-bootstrap";
 import {InputText} from "@/components/from/input/InputText";
 import {useForm} from "react-hook-form";
 import {yupResolver} from "@hookform/resolvers/yup";
@@ -10,6 +10,7 @@ import {CouponVerifyValidationSchema} from "@/pages/sites/home/validation";
 import {useAppSelector} from "@/hooks/reduxHook";
 import {saveAs} from 'file-saver';
 import {downloadCoupon} from "@/pages/sites/home/services";
+import {Link} from "react-router-dom";
 
 
 interface Props {
@@ -122,11 +123,24 @@ const PopUpForm: FC<Props> = ({isShow = false, onClose}) => {
 
                     {isVisible &&
                     <div className="modal-body bgLogin">
-                        <div className="text-center py-5 my-5">
-                            <Button onClick={() => onClickDownload()}
-                                    className="btn btn-primary px-5 pb-3 my-5 pcampa rounded-pill">Descargar
-                                Cupon</Button>
-                        </div>
+                            <div className="bgHojasModal">
+                                    <img src={baseUrl + "assets/img/logo-modal.png"} className="img-fluid"  alt={"logo modal"}/>
+                                    <div className="text-center my-2 my-lg-5">
+                                        <Button onClick={() => onClickDownload()} className="btn btn-primary px-5 pb-3 pcampa rounded-pill" disabled={isLoading}>
+                                            {isLoading &&
+                                            <Spinner
+                                                as="span"
+                                                animation="border"
+                                                size="sm"
+                                                role="status"
+                                                aria-hidden="true"
+                                                className={"me-1"}
+                                            />
+                                            }
+                                            Descargar
+                                            Cupon</Button>
+                                    </div>
+                            </div>
                     </div>
                     }
 

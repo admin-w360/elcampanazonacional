@@ -7,7 +7,7 @@ import {useForm} from "react-hook-form";
 import {yupResolver} from "@hookform/resolvers/yup";
 import {User} from "@/pages/landing/register/type";
 import {userValidationSchema} from "@/pages/landing/register/validation";
-import {Alert} from "react-bootstrap";
+import {Alert, Button, Spinner} from "react-bootstrap";
 import {ReCaptcha} from "@/components/from/recaptcha";
 import {setCouponCode, setCouponExpire, setUser} from "@/store/reducer/userSlice";
 import {saveRegister} from "@/pages/landing/register/services";
@@ -136,7 +136,19 @@ const Register: FC = () => {
                             obligatorios
                         </small>
                         <div className="my-3">
-                            <button type={"submit"}  className="btn btn-primary px-5 pb-3 pcampa rounded-pill">INGRESAR</button>
+                            <Button className="btn btn-primary px-5 pb-3 pcampa rounded-pill" type={"submit"}  disabled={isLoading}>
+                                {isLoading &&
+                                <Spinner
+                                    as="span"
+                                    animation="border"
+                                    size="sm"
+                                    role="status"
+                                    aria-hidden="true"
+                                    className={"me-1"}
+                                />
+                                }
+                                INGRESAR
+                            </Button>
                         </div>
                     </form>
                 </div>

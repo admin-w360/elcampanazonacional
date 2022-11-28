@@ -7,8 +7,8 @@ import {initApp} from "@/store/reducer/appSlice";
 import {initUser} from "@/store/reducer/userSlice";
 import {useAppDispatch, useAppSelector} from "@/hooks/reduxHook";
 import '@/config/time-ago';
-import {Spinner} from "react-bootstrap";
 import TagManager from "react-gtm-module";
+import Loader from "@/components/loader";
 
 
 declare global {
@@ -18,7 +18,7 @@ declare global {
 }
 
 const tagManagerArgs = {
-    gtmId: 'GTM-KJSWX8V'
+    gtmId: 'GTM-WQPBTK7'
 }
 
 TagManager.initialize(tagManagerArgs)
@@ -44,9 +44,8 @@ const App: FC = () => {
         }
     });
 
-    const spin = (<Spinner animation="border" variant="primary" />)
     return (
-        <Suspense fallback={spin}>
+        <Suspense fallback={<Loader />}>
            <BrowserRouter>
                <Route/>
            </BrowserRouter>

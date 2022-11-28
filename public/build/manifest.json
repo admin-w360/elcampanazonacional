@@ -1,7 +1,19 @@
 {
+  "resources/fonts/AmsiPro-Ultra.ttf": {
+    "file": "assets/AmsiPro-Ultra.8e71886f.ttf",
+    "src": "resources/fonts/AmsiPro-Ultra.ttf"
+  },
   "resources/fonts/AmsiPro-Bold.ttf": {
     "file": "assets/AmsiPro-Bold.5140821c.ttf",
     "src": "resources/fonts/AmsiPro-Bold.ttf"
+  },
+  "resources/fonts/AmsiProCond-UltraItalic.ttf": {
+    "file": "assets/AmsiProCond-UltraItalic.399ada2d.ttf",
+    "src": "resources/fonts/AmsiProCond-UltraItalic.ttf"
+  },
+  "resources/fonts/AmsiProCond-BoldItalic.ttf": {
+    "file": "assets/AmsiProCond-BoldItalic.5bf3a7f2.ttf",
+    "src": "resources/fonts/AmsiProCond-BoldItalic.ttf"
   },
   "resources/fonts/Gobold Uplow.otf": {
     "file": "assets/Gobold Uplow.60f56d93.otf",
@@ -11,24 +23,12 @@
     "file": "assets/menu-down.dc0f785b.svg",
     "src": "resources/img/menu-down.svg"
   },
-  "resources/fonts/AmsiProCond-BoldItalic.ttf": {
-    "file": "assets/AmsiProCond-BoldItalic.5bf3a7f2.ttf",
-    "src": "resources/fonts/AmsiProCond-BoldItalic.ttf"
-  },
-  "resources/fonts/AmsiPro-Ultra.ttf": {
-    "file": "assets/AmsiPro-Ultra.8e71886f.ttf",
-    "src": "resources/fonts/AmsiPro-Ultra.ttf"
-  },
   "resources/img/back-texture.png": {
     "file": "assets/back-texture.47221981.png",
     "src": "resources/img/back-texture.png"
   },
-  "resources/fonts/AmsiProCond-UltraItalic.ttf": {
-    "file": "assets/AmsiProCond-UltraItalic.399ada2d.ttf",
-    "src": "resources/fonts/AmsiProCond-UltraItalic.ttf"
-  },
   "resources/js/index.tsx": {
-    "file": "assets/index.07c8e413.js",
+    "file": "assets/index.1b3033dc.js",
     "src": "resources/js/index.tsx",
     "isEntry": true,
     "dynamicImports": [
@@ -55,116 +55,106 @@
     ]
   },
   "resources/js/layout/landing/index.tsx": {
-    "file": "assets/index.83227722.js",
+    "file": "assets/index.1e0c8ff7.js",
     "src": "resources/js/layout/landing/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/index.tsx",
-      "_index.e58c1f86.js"
+      "_index.9be904c9.js"
     ]
   },
-  "_index.e58c1f86.js": {
-    "file": "assets/index.e58c1f86.js",
+  "_index.9be904c9.js": {
+    "file": "assets/index.9be904c9.js",
     "imports": [
       "resources/js/index.tsx"
     ]
   },
   "resources/js/pages/landing/login/index.tsx": {
-    "file": "assets/index.922499bb.js",
+    "file": "assets/index.60beea0a.js",
     "src": "resources/js/pages/landing/login/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/index.tsx",
-      "_pageHook.09c469ae.js",
-      "_InputText.6b60274b.js",
-      "_index.41cfe7b9.js",
-      "_Button.e3d31cd2.js"
+      "_pageHook.aeb6c809.js",
+      "_InputText.2df06f7c.js",
+      "_index.1aab07c2.js"
     ]
   },
-  "_pageHook.09c469ae.js": {
-    "file": "assets/pageHook.09c469ae.js",
+  "_pageHook.aeb6c809.js": {
+    "file": "assets/pageHook.aeb6c809.js",
     "imports": [
       "resources/js/index.tsx"
     ]
   },
-  "_InputText.6b60274b.js": {
-    "file": "assets/InputText.6b60274b.js",
+  "_InputText.2df06f7c.js": {
+    "file": "assets/InputText.2df06f7c.js",
     "imports": [
       "resources/js/index.tsx"
     ]
   },
-  "_index.41cfe7b9.js": {
-    "file": "assets/index.41cfe7b9.js",
+  "_index.1aab07c2.js": {
+    "file": "assets/index.1aab07c2.js",
     "imports": [
       "resources/js/index.tsx",
-      "_InputText.6b60274b.js"
-    ]
-  },
-  "_Button.e3d31cd2.js": {
-    "file": "assets/Button.e3d31cd2.js",
-    "imports": [
-      "resources/js/index.tsx",
-      "_InputText.6b60274b.js"
+      "_InputText.2df06f7c.js"
     ]
   },
   "resources/js/pages/landing/register/index.tsx": {
-    "file": "assets/index.a1035146.js",
+    "file": "assets/index.c91ac5ad.js",
     "src": "resources/js/pages/landing/register/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/index.tsx",
-      "_pageHook.09c469ae.js",
-      "_InputText.6b60274b.js"
+      "_pageHook.aeb6c809.js",
+      "_InputText.2df06f7c.js"
     ]
   },
   "resources/js/layout/main/index.tsx": {
-    "file": "assets/index.1d015fa9.js",
+    "file": "assets/index.c63da5b6.js",
     "src": "resources/js/layout/main/index.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_index.e58c1f86.js",
+      "_index.9be904c9.js",
       "resources/js/index.tsx"
     ]
   },
   "resources/js/pages/sites/home/index.tsx": {
-    "file": "assets/index.833d4b48.js",
+    "file": "assets/index.2536e3bf.js",
     "src": "resources/js/pages/sites/home/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/index.tsx",
-      "_pageHook.09c469ae.js",
-      "_InputText.6b60274b.js",
-      "_Button.e3d31cd2.js"
+      "_pageHook.aeb6c809.js",
+      "_InputText.2df06f7c.js"
     ]
   },
   "resources/js/pages/sites/terms/index.tsx": {
-    "file": "assets/index.91954c51.js",
+    "file": "assets/index.a4b32347.js",
     "src": "resources/js/pages/sites/terms/index.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_pageHook.09c469ae.js",
+      "_pageHook.aeb6c809.js",
       "resources/js/index.tsx"
     ]
   },
   "resources/js/pages/sites/mechanics/index.tsx": {
-    "file": "assets/index.54f7b626.js",
+    "file": "assets/index.425fc9a7.js",
     "src": "resources/js/pages/sites/mechanics/index.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_pageHook.09c469ae.js",
+      "_pageHook.aeb6c809.js",
       "resources/js/index.tsx"
     ]
   },
   "resources/js/pages/sites/contacts/index.tsx": {
-    "file": "assets/index.8dfd5604.js",
+    "file": "assets/index.cc22ab4c.js",
     "src": "resources/js/pages/sites/contacts/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/index.tsx",
-      "_pageHook.09c469ae.js",
-      "_InputText.6b60274b.js",
-      "_index.41cfe7b9.js",
-      "_Button.e3d31cd2.js"
+      "_pageHook.aeb6c809.js",
+      "_InputText.2df06f7c.js",
+      "_index.1aab07c2.js"
     ]
   },
   "resources/css/style.css": {

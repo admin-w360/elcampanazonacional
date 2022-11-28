@@ -154,7 +154,7 @@ const Contacts: FC = () => {
                                         errorMessage={errors?.document?.message}
                                         label="* Numero de Documento"
                                         placeholder={"___._______._"}
-                                        mask={"999.9999999.9"}
+                                        mask={"999-9999999-9"}
                                         defaultValue=""
                                     />
                                 </div>
