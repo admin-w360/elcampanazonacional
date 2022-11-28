@@ -115,13 +115,36 @@ input, select {
 .accordion-item {
     border-top-left-radius: 50px !important;
     border-top-right-radius: 50px !important;
+    color: #ccc !important;
+    background-color: #2d7449 !important;
+    border: none;
+
+    .accordion-header{
+        .accordion-button{
+            color: #fff;
+            background-color: #487629 !important;
+            font-size: 20px;
+        }
+    }
 
     &:last-of-type {
         border-bottom-right-radius: 50px !important;
         border-bottom-left-radius: 50px !important;
+        .accordion-button.collapsed {
+            border-bottom-right-radius: 50px !important;
+            border-bottom-left-radius: 50px !important;
+            color: #fff;
+            background-color: #487629 !important;
+        }
     }
     &:first-of-type {
         border-top-left-radius: 50px !important;
         border-top-right-radius: 50px !important;
+        .accordion-button {
+            border-top-left-radius: 50px !important;
+            border-top-right-radius: 50px !important;
+            color: #fff;
+            background-color: #487629 !important;
+        }
     }
 }

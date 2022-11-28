@@ -92,7 +92,7 @@ const Contacts: FC = () => {
                     <div className="col-sm-6 px-4">
                         <div className="" id="accordionpqr">
                             {questions.map((quest, index)  => (
-                                <Accordion  key={"indexss"+index}>
+                                <Accordion className={"mb-2"} key={"indexss"+index}>
                                     <Accordion.Item className={"rounded-pill"} eventKey={"index"+index}>
                                         <Accordion.Header className={"rounded-pill"}>{quest.name}</Accordion.Header>
                                         <Accordion.Body>
@@ -212,9 +212,8 @@ const Contacts: FC = () => {
                             </div>
                             <div className="row mb-3">
                                 <div className="col-sm">
-                                    <InputText
+                                    <TextArea
                                         control={control}
-                                        type={"text"}
                                         name={"message"}
                                         label={"Mensaje"}
                                         errorMessage={errors?.message?.message}

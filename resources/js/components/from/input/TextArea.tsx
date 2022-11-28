@@ -1,7 +1,11 @@
-import React, {FC} from "react";
-import {FloatingLabel, Form} from "react-bootstrap";
-import classNames from "classnames";
-import {Control, useController} from "react-hook-form";
+import React from "react";
+import {FloatingLabel, Form, FormControl, FormLabel} from "react-bootstrap";
+import {
+    Control,
+    Controller,
+    RegisterOptions,
+    /*   EventType, */
+} from "react-hook-form";
 
 
 interface Props {
@@ -12,6 +16,7 @@ interface Props {
     readOnly?: boolean;
     placeHolder?: string
     errorMessage?: string;
+    rules?: RegisterOptions;
 }
 
 
@@ -23,17 +28,8 @@ export const TextArea: React.FC<Props> = ({
                                                label,
                                                placeHolder = label,
                                                errorMessage,
+                                              rules,
                                            }) => {
-
-    const {
-        field,
-        fieldState
-    } = useController({
-        name,
-        control,
-        defaultValue:""
-    });
-
     return (
         <Controller
             name={name}
@@ -41,21 +37,27 @@ export const TextArea: React.FC<Props> = ({
             defaultValue={defaultValue}
             rules={rules}
             render={({ field }) => (
-
-         <Form.Group  className={classNames("mx-auto mt-3",props.className)}  controlId={name}>
-             <FloatingLabel label={required ? "* " + label: label}>
-                 <Form.Control
-                     name={name}
-                     as="textarea"
-                     placeholder={placeHolder}
-                     style={{ height: '100px' }}
-                     onChange={field.onChange}
-                     onBlur={field.onBlur}
-                     value={field.value}
-                     className={fieldState.error ? 'is-invalid' : ''}
-                 />
-             </FloatingLabel>
-             {fieldState.error && <Form.Control.Feedback type="invalid">{fieldState.error.message}</Form.Control.Feedback>}
-         </Form.Group>
+                 <Form.Group  className={"rounded-pill" }  >
+                         <FormLabel className={'mb-1'} htmlFor={"outlined-adornment-"+name}  id={"outlined-adornment-label-"+name}>
+                             {label}
+                         </FormLabel>
+                         <Form.Control
+                             {...field}
+                             id={"outlined-adornment-"+name}
+                             name={name}
+                             as="textarea"
+                             style={{ height: '100px' }}
+                             placeholder={placeHolder}
+                             isInvalid={!!errorMessage}
+                             readOnly={readOnly}
+                         />
+                     {errorMessage && (
+                         <FormControl.Feedback  type="invalid" id={"standard-weight-helper-text-"+name}>
+                             {errorMessage}
+                         </FormControl.Feedback>
+                     )}
+                 </Form.Group>
+           )}
+        />
     );
 }

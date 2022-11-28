@@ -6,9 +6,8 @@ import {
   RegisterOptions,
 /*   EventType, */
 } from "react-hook-form";
-import {FormControl, FormControlProps, FormGroup, FormLabel} from "react-bootstrap";
+import {FormControl, FormGroup, FormLabel} from "react-bootstrap";
 import ReactInputMask from "react-input-mask";
-import {BsPrefixProps, Omit} from "react-bootstrap/helpers";
 
 interface Props {
   name: string;
