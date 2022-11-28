@@ -1,0 +1,48 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@types/file-saver": "^2.0.5",
+        "@types/react-gtm-module": "^2.0.1",
+        "axios": "^1.1.2",
+        "laravel-vite-plugin": "^0.7.0",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14",
+        "sass": "^1.56.1",
+        "vite": "^3.0.0"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^6.2.1",
+        "@fortawesome/free-solid-svg-icons": "^6.2.1",
+        "@fortawesome/react-fontawesome": "^0.2.0",
+        "@hookform/resolvers": "^2.9.10",
+        "@popperjs/core": "^2.11.6",
+        "@reduxjs/toolkit": "^1.9.0",
+        "@types/qs": "^6.9.7",
+        "@types/react-dom": "^18.0.9",
+        "@types/react-input-mask": "^3.0.2",
+        "@types/react-router-dom": "^5.3.3",
+        "@vitejs/plugin-react": "^2.2.0",
+        "bootstrap": "^5.2.3",
+        "file-saver": "^2.0.5",
+        "javascript-time-ago": "^2.5.9",
+        "qs": "^6.11.0",
+        "react": "^18.2.0",
+        "react-bootstrap": "^2.6.0",
+        "react-dom": "^18.2.0",
+        "react-google-recaptcha-v3": "^1.10.0",
+        "react-gtm-module": "^2.0.11",
+        "react-hook-form": "^7.39.5",
+        "react-idle-timer": "^5.4.2",
+        "react-input-mask": "^2.0.4",
+        "react-redux": "^8.0.5",
+        "react-router-dom": "^6.4.3",
+        "redux-persist": "^6.0.0",
+        "ts-loader": "^9.4.1",
+        "typescript": "^4.9.3",
+        "yup": "^0.32.11"
+    }
+}

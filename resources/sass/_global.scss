@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "AmsiPro-Bold";
+    src: url("../fonts/AmsiPro-Bold.ttf");
+}
+@font-face {
+    font-family: "AmsiProCond-BoldItalic";
+    src: url("../fonts/AmsiProCond-BoldItalic.ttf");
+}
+@font-face {
+    font-family: "AmsiProCond-UltraItalic";
+    src: url("../fonts/AmsiProCond-UltraItalic.ttf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AmsiPro-Ultra";
+    src: url("../fonts/AmsiPro-Ultra.ttf");
+}
+@font-face {
+    font-family: "Gobold-Uplow";
+    src: url("../fonts/Gobold Uplow.otf");
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+input, select {
+    font-size: 15px ;
+    font-weight: normal ;
+    line-height: 1.5em ;
+    color: #333333;
+    background-color: $gray-200;
+    border-style: solid ;
+    border-width: 0 ;
+    border-radius: 0 ;
+    padding: 15px ;
+}
+
+
+.btn-primary{
+    font-family: AmsiProCond-UltraItalic, serif;
+    font-weight: normal;
+    font-size: 36px;
+    color: $white;
+    line-height: 1.05;
+}
+
+.form-check{
+    a {
+       color: $white;
+       &:hover{
+          color: $primary !important;
+       }
+    }
+}
+
+.form-select, .form-control {
+    padding: 8px 30px;
+    font-size: 21px;
+    font-weight: normal;
+    line-height: 1.5em;
+    color: $white;
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $white;
+        opacity: 1; /* Firefox */
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $white;
+        opacity: 1; /* Firefox */
+    }
+
+    &::-ms-input-placeholder { /* Microsoft Edge */
+        color: $white;
+        opacity: 1; /* Firefox */
+    }
+}
+
+.form-check-input {
+    appearance: auto;
+    width: 1.5em !important;
+    height: 1.5em !important;
+}
+
+.invalid-feedback {
+   display: block;
+   text-align: center;
+}
+
+.form-check {
+    label {
+        font-size: 21px;
+        color: rgba(255, 255, 255, 0.8) !important;
+        font-family: AmsiPro-Bold;
+    }
+}
+
+.box-login-form{
+    width: 500px;
+}
+
+.container{
+    min-height: 410px;
+}
+
+
+
+.accordion-item {
+    border-top-left-radius: 50px !important;
+    border-top-right-radius: 50px !important;
+
+    &:last-of-type {
+        border-bottom-right-radius: 50px !important;
+        border-bottom-left-radius: 50px !important;
+    }
+    &:first-of-type {
+        border-top-left-radius: 50px !important;
+        border-top-right-radius: 50px !important;
+    }
+}
