@@ -31,7 +31,7 @@ const Home: FC = () => {
                     <p className="tInt2">• Los bonos tienen una vigencia por cada semana. Si un cliente tiene un bono de
                         la semana 1, no podrá utilizarlo en la semana 2. </p>
                     <p className="tInt2">• Vigencia de la promoción:</p>
-                    <p className="tInt2">
+                    <p className="tInt">
                         <blockquote className="tInt2">Semana 1: del miércoles 30 de noviembre al domingo 4 de diciembre
                             del 2022.
                         </blockquote>
