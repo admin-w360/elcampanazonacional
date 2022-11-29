@@ -45,7 +45,7 @@ const App: FC = () => {
     });
 
     return (
-        <Suspense fallback={<Loader />}>
+        <Suspense fallback={<Loader />} >
            <BrowserRouter>
                <Route/>
            </BrowserRouter>

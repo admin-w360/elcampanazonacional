@@ -54,7 +54,7 @@ const Login: FC = () => {
                 }
             } else {
                 setServerError(response?.error);
-                setLoading(false)
+               setLoading(false)
             }
         }).catch(function (error) {
             setServerError(error.message());
