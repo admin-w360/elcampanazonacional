@@ -48,7 +48,7 @@ class CouponMail extends Mailable
     public function content()
     {
         return new Content(
-            view: 'view.mail',
+            view: 'views.mail',
         );
     }
 
