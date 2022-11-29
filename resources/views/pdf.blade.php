@@ -48,7 +48,7 @@
     </tr>
     <tr>
         <td style="width: 800px; height: 53px; font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: #4a7637; text-align: center; padding: 0;">
-            {{$coupon->code}}
+            {{ substr($coupon->code, 0,-1) }}
         </td>
     </tr>
     <tr>
