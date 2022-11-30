@@ -54,7 +54,7 @@ class UserRepository implements UserContract
 
                     if (!empty($user->email) and !empty($user->id)){
                        $coupon = $this->generate($user->id);
-                       if(!is_string($coupon) AND !empty($coupon->code)){
+                       if($coupon AND !empty($coupon->code)){
                            Mail::to($user)->send(new CouponMail($coupon));
                            $success['coupon_code'] = $coupon->code;
                            $success['coupon_expire_at'] = $coupon->expire_at;
@@ -124,7 +124,7 @@ class UserRepository implements UserContract
             $authRequest->merge(['ipaddress' => $ClientIp]);
             $user->update($authRequest->all());
             $coupon = $this->generate($user->id);
-            if(!is_string($coupon) AND !empty($coupon->code)){
+            if($coupon AND !empty($coupon->code)){
                 Mail::to($user)->send(new CouponMail($coupon));
             }
             return $this->success('Coupon registrado con exito', $coupon);
@@ -157,15 +157,14 @@ class UserRepository implements UserContract
         if(Auth::check()) {
             $user = Auth::user();
             $coupon = $this->forwarded($user->id);
-            if(!is_string($coupon) AND !empty($coupon->code)) {
+            if($coupon AND !empty($coupon->code)) {
                 $pdf = Pdf::loadView('pdf', ['coupon' => $coupon])->setOption(['dpi' => 104, 'defaultFont' => 'sans-serif']);
                 return $pdf->download('coupon.pdf');
             }else{
-                return $this->error('Coupon caducado '.print_r($coupon, true), 404);
+                return $this->error('Coupon caducado o  '.print_r($coupon, true), 404);
             }
         }else{
             return $this->error('Session caducada', 401);
         }
-
     }
 }
