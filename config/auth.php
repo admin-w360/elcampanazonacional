@@ -18,6 +18,9 @@ return [
         'passwords' => 'users',
     ],
 
+
+    'ip_blacklist' => explode(',', env('IP_BLACKLIST', '')),
+
     /*
     |--------------------------------------------------------------------------
     | Authentication Guards
