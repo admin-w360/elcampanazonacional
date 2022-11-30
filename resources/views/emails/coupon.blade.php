@@ -15,8 +15,8 @@
         font-family: AmsiPro-Bold, serif;
     }
 </style>
-<body style="font-size: 0px; margin: 0; padding: 0">
-<table id="Tabla_01" style="width: 800px; height: 1073px; align-self: center; border: 0; padding: 0; margin: 0;"
+<body style="font-size: 0px; margin: 0; padding: 0;  background-color: #ffffff;">
+<table id="Tabla_01" style="width: 800px; height: 1073px; align-self: center; border: 0; padding: 0; margin: 0;  background-color: #ffffff;"
        cellpadding="0" cellspacing="0">
     <tr>
         <td style="width: 800px; height: 395px;">
@@ -32,13 +32,12 @@
     </tr>
     <tr>
         <td style="width: 800px; height: 121px;">
-            <table style="width: 800px; height: 121px; border: 0;  table-layout: fixed;" cellpadding="0" cellspacing="0">
+            <table style="width: 800px; height: 121px; display: block; margin: 0; padding: 0; border: 0;  table-layout: fixed;  background-color: #ffffff; " cellpadding="0" cellspacing="0">
                 <tr>
                     <td style="width: 247px; height: 121px;"></td>
                     <td style="width: 306px; height: 121px;">
                         @php($generatorPNG = new Picqer\Barcode\BarcodeGeneratorPNG())
-                        <img style="display: block; border: 0; "
-                             src="{{"data:image/png;base64,".base64_encode($generatorPNG->getBarcode($coupon->code, $generatorPNG::TYPE_CODE_128))}}"
+                        <img style="display: block; border: 0;" src="{{ $message->embed("data:image/png;base64,".base64_encode($generatorPNG->getBarcode($coupon->code, $generatorPNG::TYPE_CODE_128, 3, 121))) }}"
                              width="306" height="121" alt="">
                     </td>
                     <td style="width: 247px; height: 121px;"></td>
