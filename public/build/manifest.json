@@ -1,11 +1,11 @@
 {
-  "resources/img/menu-down.svg": {
-    "file": "assets/menu-down.dc0f785b.svg",
-    "src": "resources/img/menu-down.svg"
-  },
   "resources/fonts/AmsiPro-Bold.ttf": {
     "file": "assets/AmsiPro-Bold.5140821c.ttf",
     "src": "resources/fonts/AmsiPro-Bold.ttf"
+  },
+  "resources/fonts/Gobold Uplow.otf": {
+    "file": "assets/Gobold Uplow.60f56d93.otf",
+    "src": "resources/fonts/Gobold Uplow.otf"
   },
   "resources/fonts/AmsiPro-Ultra.ttf": {
     "file": "assets/AmsiPro-Ultra.8e71886f.ttf",
@@ -15,17 +15,17 @@
     "file": "assets/AmsiProCond-BoldItalic.5bf3a7f2.ttf",
     "src": "resources/fonts/AmsiProCond-BoldItalic.ttf"
   },
-  "resources/fonts/Gobold Uplow.otf": {
-    "file": "assets/Gobold Uplow.60f56d93.otf",
-    "src": "resources/fonts/Gobold Uplow.otf"
-  },
-  "resources/img/back-texture.png": {
-    "file": "assets/back-texture.47221981.png",
-    "src": "resources/img/back-texture.png"
+  "resources/img/menu-down.svg": {
+    "file": "assets/menu-down.dc0f785b.svg",
+    "src": "resources/img/menu-down.svg"
   },
   "resources/fonts/AmsiProCond-UltraItalic.ttf": {
     "file": "assets/AmsiProCond-UltraItalic.399ada2d.ttf",
     "src": "resources/fonts/AmsiProCond-UltraItalic.ttf"
+  },
+  "resources/img/back-texture.png": {
+    "file": "assets/back-texture.47221981.png",
+    "src": "resources/img/back-texture.png"
   },
   "resources/js/index.tsx": {
     "file": "assets/index.b5b4d51d.js",
@@ -43,7 +43,7 @@
       "resources/js/pages/sites/contacts/index.tsx"
     ],
     "css": [
-      "assets/index.9ad0029d.css"
+      "assets/index.0b364b95.css"
     ],
     "assets": [
       "assets/AmsiPro-Bold.5140821c.ttf",
@@ -182,13 +182,13 @@
     "src": "resources/css/style.css",
     "isEntry": true
   },
+  "resources/js/index.css": {
+    "file": "assets/index.0b364b95.css",
+    "src": "resources/js/index.css"
+  },
   "resources/sass/app.scss": {
-    "file": "assets/app.087b21e8.css",
+    "file": "assets/app.6b42721c.css",
     "src": "resources/sass/app.scss",
     "isEntry": true
-  },
-  "resources/js/index.css": {
-    "file": "assets/index.9ad0029d.css",
-    "src": "resources/js/index.css"
   }
 }
