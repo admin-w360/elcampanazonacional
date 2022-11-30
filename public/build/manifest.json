@@ -1,31 +1,31 @@
 {
-  "resources/fonts/AmsiPro-Bold.ttf": {
-    "file": "assets/AmsiPro-Bold.5140821c.ttf",
-    "src": "resources/fonts/AmsiPro-Bold.ttf"
-  },
-  "resources/fonts/Gobold Uplow.otf": {
-    "file": "assets/Gobold Uplow.60f56d93.otf",
-    "src": "resources/fonts/Gobold Uplow.otf"
-  },
   "resources/fonts/AmsiProCond-BoldItalic.ttf": {
     "file": "assets/AmsiProCond-BoldItalic.5bf3a7f2.ttf",
     "src": "resources/fonts/AmsiProCond-BoldItalic.ttf"
   },
-  "resources/fonts/AmsiPro-Ultra.ttf": {
-    "file": "assets/AmsiPro-Ultra.8e71886f.ttf",
-    "src": "resources/fonts/AmsiPro-Ultra.ttf"
+  "resources/img/menu-down.svg": {
+    "file": "assets/menu-down.dc0f785b.svg",
+    "src": "resources/img/menu-down.svg"
+  },
+  "resources/fonts/AmsiPro-Bold.ttf": {
+    "file": "assets/AmsiPro-Bold.5140821c.ttf",
+    "src": "resources/fonts/AmsiPro-Bold.ttf"
   },
   "resources/fonts/AmsiProCond-UltraItalic.ttf": {
     "file": "assets/AmsiProCond-UltraItalic.399ada2d.ttf",
     "src": "resources/fonts/AmsiProCond-UltraItalic.ttf"
   },
+  "resources/fonts/Gobold Uplow.otf": {
+    "file": "assets/Gobold Uplow.60f56d93.otf",
+    "src": "resources/fonts/Gobold Uplow.otf"
+  },
   "resources/img/back-texture.png": {
     "file": "assets/back-texture.47221981.png",
     "src": "resources/img/back-texture.png"
   },
-  "resources/img/menu-down.svg": {
-    "file": "assets/menu-down.dc0f785b.svg",
-    "src": "resources/img/menu-down.svg"
+  "resources/fonts/AmsiPro-Ultra.ttf": {
+    "file": "assets/AmsiPro-Ultra.8e71886f.ttf",
+    "src": "resources/fonts/AmsiPro-Ultra.ttf"
   },
   "resources/js/index.tsx": {
     "file": "assets/index.32f37ac4.js",
@@ -43,7 +43,7 @@
       "resources/js/pages/sites/contacts/index.tsx"
     ],
     "css": [
-      "assets/index.75a8b200.css"
+      "assets/index.7031f953.css"
     ],
     "assets": [
       "assets/AmsiPro-Bold.5140821c.ttf",
@@ -178,17 +178,17 @@
     ]
   },
   "resources/css/style.css": {
-    "file": "assets/style.0011057c.css",
+    "file": "assets/style.65bddc9b.css",
     "src": "resources/css/style.css",
     "isEntry": true
   },
-  "resources/js/index.css": {
-    "file": "assets/index.75a8b200.css",
-    "src": "resources/js/index.css"
-  },
   "resources/sass/app.scss": {
-    "file": "assets/app.c4e0c7de.css",
+    "file": "assets/app.05aca718.css",
     "src": "resources/sass/app.scss",
     "isEntry": true
+  },
+  "resources/js/index.css": {
+    "file": "assets/index.7031f953.css",
+    "src": "resources/js/index.css"
   }
 }
