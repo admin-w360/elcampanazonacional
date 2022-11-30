@@ -31,7 +31,8 @@ class UserRequest extends FormRequest
         return [
             'document_type' => 'required|in:CC,CE,PA|max:2',
             'document' => 'required|max:20',
-            'email' => 'required|unique:users'
+            'email' => 'required|unique:users',
+            'phone' => 'required|unique:users'
         ];
     }
 
@@ -48,6 +49,8 @@ class UserRequest extends FormRequest
             'document.max' => 'Documento maximo de 10 caracteres',
             'email.unique' => 'Email registrado con anterioridad',
             'email.required' => 'Email es requerido',
+            'phone.unique' => 'Telefono registrado con anterioridad',
+            'phone.required' => 'Telefono es requerido',
         ];
     }
 
