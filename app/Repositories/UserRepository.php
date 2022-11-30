@@ -120,8 +120,7 @@ class UserRepository implements UserContract
     {
         if(Auth::check()) {
             $user = Auth::user();
-            $ClientIp = isset($_SERVER['HTTP_X_FORWARDED_FOR']) && !empty($_SERVER['HTTP_X_FORWARDED_FOR']) ? $_SERVER['HTTP_X_FORWARDED_FOR'] : $authRequest->getClientIp();
-            $authRequest->merge(['ipaddress' => $ClientIp]);
+            $authRequest->merge(['ipaddress' => $authRequest->ip()]);
             $user->update($authRequest->all());
             $coupon = $this->generate($user->id);
             if($coupon AND !empty($coupon->code)){
