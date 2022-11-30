@@ -43,6 +43,11 @@ const routes: RouteItem[] = [
                 meta: {name: "Términos y condiciones"},
             },
             {
+                path: 'brands',
+                element: React.lazy(() => import("../pages/sites/brands")),
+                meta: {name: "Marcas Participantes"},
+            },
+            {
                 path: 'contacts',
                 element: React.lazy(() => import("../pages/sites/contacts")),
                 meta: {name: "Contactenos"},

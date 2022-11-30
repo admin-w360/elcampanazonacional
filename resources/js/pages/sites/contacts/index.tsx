@@ -1,11 +1,8 @@
 import React, {FC, useEffect, useState} from "react";
 import {useTitle} from "@/hooks/pageHook";
-import {useAppDispatch, useAppSelector} from "@/hooks/reduxHook";
-import {Link, useNavigate} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {useForm} from "react-hook-form";
 import {yupResolver} from "@hookform/resolvers/yup";
-import {User} from "@/pages/landing/register/type";
-import {userValidationSchema} from "@/pages/landing/register/validation";
 import {Accordion, Alert, Button} from "react-bootstrap";
 import {useQuery} from "@/hooks/queryHook";
 import {Contact, ContactDefaultData} from "@/pages/sites/contacts/type";
@@ -38,6 +35,7 @@ const Contacts: FC = () => {
             title: "Contactenos / PQR"
         }
     });
+
     const questions: Question[] = useQuery("questions", false).data ?? []
     const [showSuccessMessage, setShowSuccessMessage] = useState(false);
     const [showErrorMessage, setShowErrorMessage] = useState(false);
@@ -89,7 +87,8 @@ const Contacts: FC = () => {
             </div>
             <div className="box-home mx-auto">
                 <div className="row mt-4">
-                    <div className="col-sm-6 px-4">
+                    <div className="col-lg-6 px-4">
+                        <h2 className="sub-titulote my-3">Preguntas Frecuentes</h2>
                         <div className="" id="accordionpqr">
                             {questions.map((quest, index)  => (
                                 <Accordion className={"mb-2"} key={"indexss"+index}>
@@ -103,7 +102,8 @@ const Contacts: FC = () => {
                             ))}
                         </div>
                     </div>
-                    <div className="col-sm-6 px-4">
+                    <div className="col-lg-6 px-4">
+                        <h2 className="sub-titulote my-3">Formulario de Contacto</h2>
                         <form className="fHome" onSubmit={handleSubmit(onSubmit)}>
 
                             <Alert show={showSuccessMessage} variant="success">
@@ -119,7 +119,7 @@ const Contacts: FC = () => {
                                 </div>
                             </Alert>
 
-                            <Alert show={showErrorMessage} variant="danger">
+                            <Alert show={showErrorMessage} variant="warning">
                                 <Alert.Heading>Error Enviado Mensaje</Alert.Heading>
                                 <p>
                                     Su mensaje de contacto no ha podido llegar a su destino, por favor intente enviarlo más tarde.
@@ -223,14 +223,14 @@ const Contacts: FC = () => {
                             </div>
                             <div className="text-center">
                                 <p className="my-3">Los campos marcados <span>*</span> son obligatorios</p>
-                                <button className="btn btn-primary"  type="submit">Enviar</button>
+                                <button className="btn btn-primary px-5 pb-3 pcampa rounded-pill"  type="submit">Enviar Formulario</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
             <div className="text-center mt-5">
-                <a href="terminos.html" className="footLogin">Aplican términos y condiciones</a>
+                <Link to="/site/terms" className="footLogin">Aplican términos y condiciones</Link>
             </div>
             <br />
         </div>

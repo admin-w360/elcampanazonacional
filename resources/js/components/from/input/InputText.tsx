@@ -11,7 +11,7 @@ import ReactInputMask from "react-input-mask";
 
 interface Props {
   name: string;
-  mask?: string;
+  mask?: string | Array<(string | RegExp)>;
   control: Control<any, object>;
   defaultValue: string;
   label: string;

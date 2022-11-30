@@ -8,7 +8,6 @@ import {yupResolver} from "@hookform/resolvers/yup";
 import {User} from "@/pages/landing/register/type";
 import {userValidationSchema} from "@/pages/landing/register/validation";
 import {Alert, Button, Spinner} from "react-bootstrap";
-import {ReCaptcha} from "@/components/from/recaptcha";
 import {setCouponCode, setCouponExpire, setUser} from "@/store/reducer/userSlice";
 import {saveRegister} from "@/pages/landing/register/services";
 
@@ -19,6 +18,15 @@ import {saveRegister} from "@/pages/landing/register/services";
 const Register: FC = () => {
 
     useTitle("Registro de Usuario")
+
+
+    window.dataLayer.push({
+        event: 'pageview',
+        page: {
+            url: "/site/contacts",
+            title: "Registro de Usuario"
+        }
+    });
 
     const appUserSelector = useAppSelector((state) => state.user);
     const dispatch = useAppDispatch();
@@ -96,8 +104,8 @@ const Register: FC = () => {
                                 control={control}
                                 name="name"
                                 errorMessage={errors?.name?.message}
-                                label="* Nombre y Apellidos"
-                                placeholder={"Aquí nombre y apellidos"}
+                                label="* Nombres y apellidos"
+                                placeholder={"Aquí nombres y apellidos"}
                                 defaultValue=""
                             />
                         </div>
@@ -106,8 +114,8 @@ const Register: FC = () => {
                                 control={control}
                                 name="address"
                                 errorMessage={errors?.address?.message}
-                                label="* Direccion"
-                                placeholder={"Aquí tu direccion"}
+                                label="* Dirección"
+                                placeholder={"Aquí tu dirección"}
                                 defaultValue=""
                             />
                         </div>
@@ -116,8 +124,8 @@ const Register: FC = () => {
                                 control={control}
                                 name="phone"
                                 errorMessage={errors?.phone?.message}
-                                label="* Numero Celular"
-                                placeholder={"Aquí tu numero celular"}
+                                label="* Número celular"
+                                placeholder={"Aquí tu número  celular"}
                                 defaultValue=""
                             />
                         </div>
@@ -127,7 +135,7 @@ const Register: FC = () => {
                                 name="email"
                                 errorMessage={errors?.email?.message}
                                 label="* Correo"
-                                placeholder={"Aquí tu numero celular"}
+                                placeholder={"Aquí tu correo electronico"}
                                 defaultValue=""
                             />
                         </div>

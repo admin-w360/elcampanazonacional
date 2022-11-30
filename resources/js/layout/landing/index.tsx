@@ -17,7 +17,7 @@ const LandingLayout: FC = () => {
                         <div className="row m-0">
                             <div className="col-lg-7 m-0 p-4 p-lg-0 text-center">
                                 <img src={baseUrl+"assets/img/bgLogin_1.png"} className="img-fluid my-lg-5 py-lg-5"  alt={"el campanazo nacional"}/>
-                                <img src={baseUrl+"assets/img/bgLogin_2.png"} className="img-fluid"  alt={"busca tu descuento"}/>
+                                <img src={baseUrl+"assets/img/bgLogin_2.png"} className="img-fluid d-none d-lg-block mx-auto"  alt={"busca tu descuento"}/>
                             </div>
                             <div className="col-lg-5">
                                 <div className="row d-flex align-items-center justify-content-center">
@@ -25,6 +25,7 @@ const LandingLayout: FC = () => {
                                         <Outlet/>
                                     </div>
                                 </div>
+                                <img src={baseUrl+"assets/img/bgLogin_2.png"} className="img-fluid d-block d-lg-none mx-auto"  alt={"busca tu descuento"}/>
                             </div>
                         </div>
                     </div>

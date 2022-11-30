@@ -16,7 +16,7 @@
     }
 </style>
 <body style="font-size: 0px; margin: 0; padding: 0">
-<table id="Tabla_01" style="width: 800px; height: 1075px; align-self: center; border: 0; padding: 0; margin: 0;"
+<table id="Tabla_01" style="width: 800px; height: 1073px; align-self: center; border: 0; padding: 0; margin: 0;"
        cellpadding="0" cellspacing="0">
     <tr>
         <td style="width: 800px; height: 395px;">
@@ -53,8 +53,10 @@
     </tr>
     <tr>
         <td style="width: 800px; height: 156px;">
+            <a href="https://supermercadosnacional.com/" style="width: 800px; height: 156px; display: block; border: 0;">
             <img style="display: block; border: 0;" src="{{asset('assets/mail/cupon_07.jpg')}}" width="800" height="156"
                  alt="">
+            </a>
         </td>
     </tr>
     <tr>
@@ -84,19 +86,32 @@
         </td>
     </tr>
     <tr>
-        <td style="width: 800px; height: 114px;">
-            <table style="width: 800px; height: 114px; border: 0;" cellpadding="0" cellspacing="0">
+        <td style="width: 800px; height: 47px;" >
+            <img style="display: block; border: 0;" src="{{asset('assets/mail/cupon_12_01.jpg')}}" width="800" height="47" alt="">
+        </td>
+    </tr>
+    <tr>
+        <td  style="width: 800px; height: 29px; background-color: #174c22; display: block;  margin: 0; padding: 0; ">
+            <table  style="width: 800px; height: 29px; border: 0; background-color: #174c22;  position:relative;" cellpadding="0" cellspacing="0"  >
                 <tr>
-                    <td style="width: 791px; height: 114px;">
-                        <img style="display: block; border: 0;" src="{{asset('assets/mail/cupon_12.jpg')}}" width="791"
-                             height="114" alt="">
+                    <td style="width: 41px; height: 29px;">
+                        <img style="display: block; border: 0;" src="{{asset('assets/mail/cupon_12_02.jpg')}}" width="41" height="29" alt="">
                     </td>
-                    <td style="width: 9px; height: 114px;">
-                        <img style="display: block; border: 0;" src="{{asset('assets/mail/cupon_13.jpg')}}" width="9"
-                             height="114" alt="">
+                    <td style="width: 400px; height: 29px;  border: 0; margin: 0; padding: 0; line-height: 0; font-family: Helvetica, Sans-Serif, serif; font-style: italic; color: #fff; background-color: #174c22; font-size: 12px; font-weight: bold;">
+                        Este cupon es valido desde {{ $coupon->created_at->format('d M') }} hasta {{ ($coupon->expire_at->format('d')-1)." ".$coupon->expire_at->format('M') }} del 2022
+                    </td>
+                    <td style="width: 359px; height: 29px;">
+                        <img style="display: block; border: 0;" src="{{asset('assets/mail/cupon_12_04.jpg')}}" width="359" height="29" alt="">
                     </td>
                 </tr>
             </table>
         </td>
     </tr>
+    <tr>
+        <td style="width: 800px; height: 36px;">
+            <img style="display: block; border: 0;" src="{{asset('assets/mail/cupon_12_05.jpg')}}" width="800" height="36" alt="">
+        </td>
+    </tr>
 </table>
+</body>
+</html>

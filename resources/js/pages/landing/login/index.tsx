@@ -8,18 +8,24 @@ import {UserLogin} from "@/pages/landing/login/type";
 import {InputText} from "@/components/from/input/InputText";
 import {ReCaptcha} from "@/components/from/recaptcha";
 import {useAppDispatch, useAppSelector} from "@/hooks/reduxHook";
-import {Link, useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import {startSession} from "@/pages/landing/login/services";
 import {setUser} from "@/store/reducer/userSlice";
 import {Alert, Button, Spinner} from "react-bootstrap";
 import InputCheck from "@/components/from/input/InputCheck";
-import * as Console from "console";
 
 
 const Login: FC = () => {
     useTitle("Inicio de Sesion")
 
-    const appSelector = useAppSelector((state) => state.app);
+    window.dataLayer.push({
+        event: 'pageview',
+        page: {
+            url: "/site/contacts",
+            title: "Inicio de Sesion"
+        }
+    });
+
     const dispatch = useAppDispatch();
     const navigate = useNavigate();
     const [isLoading, setLoading] = useState(false);
@@ -28,10 +34,17 @@ const Login: FC = () => {
     const {
         control,
         handleSubmit,
+        watch,
         formState: {errors},
     } = useForm<UserLogin>({
         resolver: yupResolver(loginValidationSchema),
     });
+
+    const watchDoc = watch("document_type");
+
+    console.log(watchDoc);
+
+    const maskPA = [/[a-zA-Z]{2}/i, /[0-9]{12}/i];
 
     const onSubmit = async (data: UserLogin) => {
 
@@ -101,23 +114,32 @@ const Login: FC = () => {
                                 label="* Tipo de documento"
                                 defaultValue=""
                                 options={[
-                                    {label: 'Seleccionar documento', value: ''},
-                                    {label: 'Cedula de Ciudadania', value: 'CC'},
+                                    {label: 'Seleccionar', value: ''},
+                                    {label: 'Cedula de Ciudadanía', value: 'CC'},
                                     {label: 'Pasaporte', value: 'PA'}
                                 ]}
                                 errorMessage={errors?.document_type?.message}
                             />
                         </div>
                         <div className="form-group mb-3">
-                            <InputText
+                            {watchDoc == "PA" && <InputText
                                 control={control}
                                 name="document"
                                 errorMessage={errors?.document?.message}
-                                label="* Numero de Documento"
-                                placeholder={"___._______._"}
+                                label="* Número de pasaporte"
+                                placeholder={"______________"}
+                                mask={"**99999999999"}
+                                defaultValue=""
+                            />}
+                            {watchDoc == "CC" && <InputText
+                                control={control}
+                                name="document"
+                                errorMessage={errors?.document?.message}
+                                label="* Número de documento"
+                                placeholder={"___-_______-_"}
                                 mask={"999-9999999-9"}
                                 defaultValue=""
-                            />
+                            />}
                         </div>
                         <div className="form-group my-5">
                             <InputCheck

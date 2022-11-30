@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('MAIL_MAILER', 'smtp'),
+    'default' => env('MAIL_MAILER', 'ses'),
 
     /*
     |--------------------------------------------------------------------------
@@ -47,6 +47,9 @@ return [
 
         'ses' => [
             'transport' => 'ses',
+            'key' => env('AWS_ACCESS_KEY_ID'),
+            'secret' => env('AWS_SECRET_ACCESS_KEY'),
+            'region' => env('AWS_DEFAULT_REGION'),
         ],
 
         'mailgun' => [
@@ -92,8 +95,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'no-reply@elcampanazonacional.com'),
+        'name' => env('MAIL_FROM_NAME', 'El Campanazo Nacional'),
     ],
 
     /*
@@ -109,7 +112,6 @@ return [
 
     'markdown' => [
         'theme' => 'default',
-
         'paths' => [
             resource_path('views/vendor/mail'),
         ],

@@ -22,4 +22,15 @@ class Coupon extends Model
         'user_id',
     ];
 
+    /**
+     * The attributes that should be cast.
+     *
+     * @var array<string, string>
+     */
+    protected $casts = [
+        'send_at' => 'datetime',
+        'forwarded_at' => 'datetime',
+        'expire_at' => 'datetime'
+    ];
+
 }

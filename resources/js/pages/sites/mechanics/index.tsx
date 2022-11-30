@@ -6,13 +6,21 @@ import {Link} from "react-router-dom";
 /**
  * Home
  */
-const Home: FC = () => {
-    useTitle("Home")
+const Merchanics: FC = () => {
+    useTitle("¿Cómo participar?")
+
+    window.dataLayer.push({
+        event: 'pageview',
+        page: {
+            url: "/site/mechanics",
+            title: "¿Cómo participar?"
+        }
+    });
 
     return (
-        <div className="container">
+        <div className="container-fluid">
             <div className="row my-5">
-                <div className="col-lg-8 text-center">
+                <div className=" text-center">
                     <h2 className="hcampa">¿Cómo participar?</h2>
                 </div>
             </div>
@@ -33,7 +41,8 @@ const Home: FC = () => {
                         <img src={baseUrl+"assets/img/meca-2.png"} className="img-fluid" alt={"mecanica paso 2"} />
                     </div>
                     <div className="col-sm-6">
-                        <p className="tmeca p-0 ">En tu correo electrónico <span>descarga<br /> el bono</span> con el descuento sorpresa.</p>
+                        <p className="tmeca p-0 ">En tu correo electrónico <span>descarga<br />
+          el bono</span> con el descuento sorpresa.</p>
                     </div>
                     <div className="col-sm-3 d-flex align-items-center">
                         <img src={baseUrl+"assets/img/puntoR.png"} className="img-fluid me-3" alt={"mecanica paso 3"} />
@@ -53,12 +62,15 @@ const Home: FC = () => {
                     </div>
                 </div>
             </div>
+            <div className="text-center my-2 my-lg-5">
+                <Link to="/site/brands" className="btn btn-primary px-5 pb-3 pcampa rounded-pill">Marcas participantes</Link>
+            </div>
             <div className="text-center mt-5">
-                <Link to="terms" className="footLogin">Aplican términos y condiciones</Link>
+                <Link to="/site/terms" className="footLogin">Aplican términos y condiciones</Link>
             </div>
             <br />
         </div>
     )
 }
 
-export default Home
+export default Merchanics
