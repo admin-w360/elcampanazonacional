@@ -49,7 +49,7 @@ const Merchanics: FC = () => {
             <div className="borderLine p-4 my-3 w-80 mx-auto">
                 <div className="row d-flex align-items-center ">
                     <div className="col-sm-3 text-center">
-                        <img src={baseUrl+"assets/img/puntoR.png"} className="img-fluid me-3" alt={"mecanica paso 3"} />
+                        <img src={baseUrl+"assets/img/meca-3.png"} className="img-fluid me-3" alt={"mecanica paso 3"} />
                     </div>
                     <div className="col-sm-8">
                         <p className="tmeca p-0"><span>Para activar tu cupón:</span> tu compra debe ser de RD$3,000 o
@@ -61,7 +61,7 @@ const Merchanics: FC = () => {
             <div className="borderLine p-4 my-3 w-80 mx-auto">
                 <div className="row d-flex align-items-center ">
                     <div className="col-sm-3 text-center">
-                        <img src={baseUrl+"assets/img/meca-3.png"} className="img-fluid" alt={"mecanica paso 4"} />
+                        <img src={baseUrl+"assets/img/meca-4.png"} className="img-fluid" alt={"mecanica paso 4"} />
                     </div>
                     <div className="col-sm-8">
                         <p className="tmeca p-0">Si realizas tu compra online: debes colocar el código del cupón
