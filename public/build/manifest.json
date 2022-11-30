@@ -7,9 +7,17 @@
     "file": "assets/menu-down.dc0f785b.svg",
     "src": "resources/img/menu-down.svg"
   },
+  "resources/fonts/AmsiProCond-UltraItalic.ttf": {
+    "file": "assets/AmsiProCond-UltraItalic.399ada2d.ttf",
+    "src": "resources/fonts/AmsiProCond-UltraItalic.ttf"
+  },
   "resources/img/back-texture.png": {
     "file": "assets/back-texture.47221981.png",
     "src": "resources/img/back-texture.png"
+  },
+  "resources/fonts/AmsiPro-Ultra.ttf": {
+    "file": "assets/AmsiPro-Ultra.8e71886f.ttf",
+    "src": "resources/fonts/AmsiPro-Ultra.ttf"
   },
   "resources/fonts/Gobold Uplow.otf": {
     "file": "assets/Gobold Uplow.60f56d93.otf",
@@ -19,16 +27,8 @@
     "file": "assets/AmsiProCond-BoldItalic.5bf3a7f2.ttf",
     "src": "resources/fonts/AmsiProCond-BoldItalic.ttf"
   },
-  "resources/fonts/AmsiPro-Ultra.ttf": {
-    "file": "assets/AmsiPro-Ultra.8e71886f.ttf",
-    "src": "resources/fonts/AmsiPro-Ultra.ttf"
-  },
-  "resources/fonts/AmsiProCond-UltraItalic.ttf": {
-    "file": "assets/AmsiProCond-UltraItalic.399ada2d.ttf",
-    "src": "resources/fonts/AmsiProCond-UltraItalic.ttf"
-  },
   "resources/js/index.tsx": {
-    "file": "assets/index.d186bbb3.js",
+    "file": "assets/index.a65edc86.js",
     "src": "resources/js/index.tsx",
     "isEntry": true,
     "dynamicImports": [
@@ -56,125 +56,125 @@
     ]
   },
   "resources/js/layout/landing/index.tsx": {
-    "file": "assets/index.167333a8.js",
+    "file": "assets/index.e8988e2d.js",
     "src": "resources/js/layout/landing/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/index.tsx",
-      "_index.cc79e6cd.js"
+      "_index.51f6d4af.js"
     ]
   },
-  "_index.cc79e6cd.js": {
-    "file": "assets/index.cc79e6cd.js",
+  "_index.51f6d4af.js": {
+    "file": "assets/index.51f6d4af.js",
     "imports": [
       "resources/js/index.tsx"
     ]
   },
   "resources/js/pages/landing/login/index.tsx": {
-    "file": "assets/index.e7419b84.js",
+    "file": "assets/index.6b3527d7.js",
     "src": "resources/js/pages/landing/login/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/index.tsx",
-      "_pageHook.6a02e29d.js",
-      "_InputText.deea459f.js",
-      "_index.28a22e4c.js",
-      "_Spinner.86f65eea.js"
+      "_pageHook.eaa71b35.js",
+      "_InputText.fdc4a1e2.js",
+      "_index.409ea4b6.js",
+      "_Spinner.5e542365.js"
     ]
   },
-  "_pageHook.6a02e29d.js": {
-    "file": "assets/pageHook.6a02e29d.js",
+  "_pageHook.eaa71b35.js": {
+    "file": "assets/pageHook.eaa71b35.js",
     "imports": [
       "resources/js/index.tsx"
     ]
   },
-  "_InputText.deea459f.js": {
-    "file": "assets/InputText.deea459f.js",
+  "_InputText.fdc4a1e2.js": {
+    "file": "assets/InputText.fdc4a1e2.js",
     "imports": [
       "resources/js/index.tsx"
     ]
   },
-  "_index.28a22e4c.js": {
-    "file": "assets/index.28a22e4c.js",
+  "_index.409ea4b6.js": {
+    "file": "assets/index.409ea4b6.js",
     "imports": [
       "resources/js/index.tsx",
-      "_InputText.deea459f.js"
+      "_InputText.fdc4a1e2.js"
     ]
   },
-  "_Spinner.86f65eea.js": {
-    "file": "assets/Spinner.86f65eea.js",
+  "_Spinner.5e542365.js": {
+    "file": "assets/Spinner.5e542365.js",
     "imports": [
-      "_InputText.deea459f.js",
+      "_InputText.fdc4a1e2.js",
       "resources/js/index.tsx"
     ]
   },
   "resources/js/pages/landing/register/index.tsx": {
-    "file": "assets/index.bc59c33d.js",
+    "file": "assets/index.7a8bce67.js",
     "src": "resources/js/pages/landing/register/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/index.tsx",
-      "_pageHook.6a02e29d.js",
-      "_InputText.deea459f.js",
-      "_Spinner.86f65eea.js"
+      "_pageHook.eaa71b35.js",
+      "_InputText.fdc4a1e2.js",
+      "_Spinner.5e542365.js"
     ]
   },
   "resources/js/layout/main/index.tsx": {
-    "file": "assets/index.76650793.js",
+    "file": "assets/index.001ff15b.js",
     "src": "resources/js/layout/main/index.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_index.cc79e6cd.js",
+      "_index.51f6d4af.js",
       "resources/js/index.tsx"
     ]
   },
   "resources/js/pages/sites/home/index.tsx": {
-    "file": "assets/index.1b52e536.js",
+    "file": "assets/index.71fb8ab0.js",
     "src": "resources/js/pages/sites/home/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/index.tsx",
-      "_pageHook.6a02e29d.js",
-      "_InputText.deea459f.js",
-      "_Spinner.86f65eea.js"
+      "_pageHook.eaa71b35.js",
+      "_InputText.fdc4a1e2.js",
+      "_Spinner.5e542365.js"
     ]
   },
   "resources/js/pages/sites/terms/index.tsx": {
-    "file": "assets/index.636b347b.js",
+    "file": "assets/index.30f080e1.js",
     "src": "resources/js/pages/sites/terms/index.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_pageHook.6a02e29d.js",
+      "_pageHook.eaa71b35.js",
       "resources/js/index.tsx"
     ]
   },
   "resources/js/pages/sites/mechanics/index.tsx": {
-    "file": "assets/index.619bbee3.js",
+    "file": "assets/index.040a7f4c.js",
     "src": "resources/js/pages/sites/mechanics/index.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_pageHook.6a02e29d.js",
+      "_pageHook.eaa71b35.js",
       "resources/js/index.tsx"
     ]
   },
   "resources/js/pages/sites/brands/index.tsx": {
-    "file": "assets/index.44475194.js",
+    "file": "assets/index.6d7ad14f.js",
     "src": "resources/js/pages/sites/brands/index.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_pageHook.6a02e29d.js",
+      "_pageHook.eaa71b35.js",
       "resources/js/index.tsx"
     ]
   },
   "resources/js/pages/sites/contacts/index.tsx": {
-    "file": "assets/index.c1ad3a0e.js",
+    "file": "assets/index.016d7c69.js",
     "src": "resources/js/pages/sites/contacts/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/index.tsx",
-      "_pageHook.6a02e29d.js",
-      "_InputText.deea459f.js",
-      "_index.28a22e4c.js"
+      "_pageHook.eaa71b35.js",
+      "_InputText.fdc4a1e2.js",
+      "_index.409ea4b6.js"
     ]
   },
   "resources/css/style.css": {

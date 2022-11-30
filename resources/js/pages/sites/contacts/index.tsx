@@ -65,7 +65,7 @@ const Contacts: FC = () => {
 
     const onSubmit = async (data: Contact) => {
         await postContact(data).then(function (response) {
-            if (response?.status === 'success') {
+            if (response?.error === false){
                 setShowSuccessMessage(true);
                 reset(ContactDefaultData)
             }else{

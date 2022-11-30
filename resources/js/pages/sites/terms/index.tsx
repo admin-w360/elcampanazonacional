@@ -46,8 +46,7 @@ const Terms: FC = () => {
                     </blockquote>
                     <blockquote className="tInt2">Semana 2: lunes 5 al domingo 11 de diciembre del 2022.</blockquote>
                     <blockquote className="tInt2">Semana 3: lunes 12 al domingo 18 de diciembre del 2022.</blockquote>
-                    <p className="tInt2">• El cupón de descuento sorpresa aplica para un máximo de RD$50,000 en compras
-                        online.</p>
+                    <br />
                 </div>
             </div>
         </div>
