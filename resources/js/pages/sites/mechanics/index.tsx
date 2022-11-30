@@ -64,7 +64,7 @@ const Merchanics: FC = () => {
                         <img src={baseUrl+"assets/img/meca-4.png"} className="img-fluid" alt={"mecanica paso 4"} />
                     </div>
                     <div className="col-sm-8">
-                        <p className="tmeca p-0">Si realizas tu compra online: debes colocar el código del cupón
+                        <p className="tmeca p-0"><span>Si realizas tu compra online:</span> debes colocar el código del cupón
                             en la casilla cupón de descuento.</p>
                     </div>
                 </div>
