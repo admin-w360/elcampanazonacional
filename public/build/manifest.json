@@ -1,19 +1,11 @@
 {
-  "resources/fonts/AmsiPro-Bold.ttf": {
-    "file": "assets/AmsiPro-Bold.5140821c.ttf",
-    "src": "resources/fonts/AmsiPro-Bold.ttf"
-  },
   "resources/fonts/Gobold Uplow.otf": {
     "file": "assets/Gobold Uplow.60f56d93.otf",
     "src": "resources/fonts/Gobold Uplow.otf"
   },
-  "resources/fonts/AmsiPro-Ultra.ttf": {
-    "file": "assets/AmsiPro-Ultra.8e71886f.ttf",
-    "src": "resources/fonts/AmsiPro-Ultra.ttf"
-  },
-  "resources/fonts/AmsiProCond-BoldItalic.ttf": {
-    "file": "assets/AmsiProCond-BoldItalic.5bf3a7f2.ttf",
-    "src": "resources/fonts/AmsiProCond-BoldItalic.ttf"
+  "resources/fonts/AmsiPro-Bold.ttf": {
+    "file": "assets/AmsiPro-Bold.5140821c.ttf",
+    "src": "resources/fonts/AmsiPro-Bold.ttf"
   },
   "resources/img/menu-down.svg": {
     "file": "assets/menu-down.dc0f785b.svg",
@@ -23,12 +15,20 @@
     "file": "assets/AmsiProCond-UltraItalic.399ada2d.ttf",
     "src": "resources/fonts/AmsiProCond-UltraItalic.ttf"
   },
+  "resources/fonts/AmsiProCond-BoldItalic.ttf": {
+    "file": "assets/AmsiProCond-BoldItalic.5bf3a7f2.ttf",
+    "src": "resources/fonts/AmsiProCond-BoldItalic.ttf"
+  },
+  "resources/fonts/AmsiPro-Ultra.ttf": {
+    "file": "assets/AmsiPro-Ultra.8e71886f.ttf",
+    "src": "resources/fonts/AmsiPro-Ultra.ttf"
+  },
   "resources/img/back-texture.png": {
     "file": "assets/back-texture.47221981.png",
     "src": "resources/img/back-texture.png"
   },
   "resources/js/index.tsx": {
-    "file": "assets/index.b5b4d51d.js",
+    "file": "assets/index.d1b3b4cc.js",
     "src": "resources/js/index.tsx",
     "isEntry": true,
     "dynamicImports": [
@@ -56,125 +56,125 @@
     ]
   },
   "resources/js/layout/landing/index.tsx": {
-    "file": "assets/index.43416ad4.js",
+    "file": "assets/index.615f8776.js",
     "src": "resources/js/layout/landing/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/index.tsx",
-      "_index.5b029b26.js"
+      "_index.585c8835.js"
     ]
   },
-  "_index.5b029b26.js": {
-    "file": "assets/index.5b029b26.js",
+  "_index.585c8835.js": {
+    "file": "assets/index.585c8835.js",
     "imports": [
       "resources/js/index.tsx"
     ]
   },
   "resources/js/pages/landing/login/index.tsx": {
-    "file": "assets/index.7c4959de.js",
+    "file": "assets/index.e6e8aadd.js",
     "src": "resources/js/pages/landing/login/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/index.tsx",
-      "_pageHook.587fe15a.js",
-      "_InputText.a8019462.js",
-      "_index.600d85c0.js",
-      "_Spinner.5b83016c.js"
+      "_pageHook.3588da64.js",
+      "_InputText.9a119acc.js",
+      "_index.a0b2281c.js",
+      "_Spinner.bc6db0b8.js"
     ]
   },
-  "_pageHook.587fe15a.js": {
-    "file": "assets/pageHook.587fe15a.js",
+  "_pageHook.3588da64.js": {
+    "file": "assets/pageHook.3588da64.js",
     "imports": [
       "resources/js/index.tsx"
     ]
   },
-  "_InputText.a8019462.js": {
-    "file": "assets/InputText.a8019462.js",
+  "_InputText.9a119acc.js": {
+    "file": "assets/InputText.9a119acc.js",
     "imports": [
       "resources/js/index.tsx"
     ]
   },
-  "_index.600d85c0.js": {
-    "file": "assets/index.600d85c0.js",
+  "_index.a0b2281c.js": {
+    "file": "assets/index.a0b2281c.js",
     "imports": [
       "resources/js/index.tsx",
-      "_InputText.a8019462.js"
+      "_InputText.9a119acc.js"
     ]
   },
-  "_Spinner.5b83016c.js": {
-    "file": "assets/Spinner.5b83016c.js",
+  "_Spinner.bc6db0b8.js": {
+    "file": "assets/Spinner.bc6db0b8.js",
     "imports": [
-      "_InputText.a8019462.js",
+      "_InputText.9a119acc.js",
       "resources/js/index.tsx"
     ]
   },
   "resources/js/pages/landing/register/index.tsx": {
-    "file": "assets/index.c7dd508e.js",
+    "file": "assets/index.0f1dbca3.js",
     "src": "resources/js/pages/landing/register/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/index.tsx",
-      "_pageHook.587fe15a.js",
-      "_InputText.a8019462.js",
-      "_Spinner.5b83016c.js"
+      "_pageHook.3588da64.js",
+      "_InputText.9a119acc.js",
+      "_Spinner.bc6db0b8.js"
     ]
   },
   "resources/js/layout/main/index.tsx": {
-    "file": "assets/index.dba72f8a.js",
+    "file": "assets/index.79a1d90e.js",
     "src": "resources/js/layout/main/index.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_index.5b029b26.js",
+      "_index.585c8835.js",
       "resources/js/index.tsx"
     ]
   },
   "resources/js/pages/sites/home/index.tsx": {
-    "file": "assets/index.f676f705.js",
+    "file": "assets/index.bd0c780c.js",
     "src": "resources/js/pages/sites/home/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/index.tsx",
-      "_pageHook.587fe15a.js",
-      "_InputText.a8019462.js",
-      "_Spinner.5b83016c.js"
+      "_pageHook.3588da64.js",
+      "_InputText.9a119acc.js",
+      "_Spinner.bc6db0b8.js"
     ]
   },
   "resources/js/pages/sites/terms/index.tsx": {
-    "file": "assets/index.8fbe89f6.js",
+    "file": "assets/index.46197c89.js",
     "src": "resources/js/pages/sites/terms/index.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_pageHook.587fe15a.js",
+      "_pageHook.3588da64.js",
       "resources/js/index.tsx"
     ]
   },
   "resources/js/pages/sites/mechanics/index.tsx": {
-    "file": "assets/index.0ee42b7b.js",
+    "file": "assets/index.b9a73294.js",
     "src": "resources/js/pages/sites/mechanics/index.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_pageHook.587fe15a.js",
+      "_pageHook.3588da64.js",
       "resources/js/index.tsx"
     ]
   },
   "resources/js/pages/sites/brands/index.tsx": {
-    "file": "assets/index.16db49c4.js",
+    "file": "assets/index.3b4cc4b3.js",
     "src": "resources/js/pages/sites/brands/index.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_pageHook.587fe15a.js",
+      "_pageHook.3588da64.js",
       "resources/js/index.tsx"
     ]
   },
   "resources/js/pages/sites/contacts/index.tsx": {
-    "file": "assets/index.0e5ccc5f.js",
+    "file": "assets/index.58df972b.js",
     "src": "resources/js/pages/sites/contacts/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/index.tsx",
-      "_pageHook.587fe15a.js",
-      "_InputText.a8019462.js",
-      "_index.600d85c0.js"
+      "_pageHook.3588da64.js",
+      "_InputText.9a119acc.js",
+      "_index.a0b2281c.js"
     ]
   },
   "resources/css/style.css": {

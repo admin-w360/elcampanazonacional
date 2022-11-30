@@ -18,47 +18,54 @@ const Merchanics: FC = () => {
     });
 
     return (
-        <div className="container-fluid">
-            <div className="row my-5">
+       <div className="container-fluid">
+            <div className="row my-5 justify-content-md-center">
                 <div className=" text-center">
                     <h2 className="hcampa">¿Cómo participar?</h2>
                 </div>
             </div>
             <div className="borderLine p-4 my-3 w-80 mx-auto">
-                <div className="row d-flex align-items-center">
+                <div className="row d-flex align-items-center ">
                     <div className="col-sm-3 text-center">
                         <img src={baseUrl+"assets/img/meca-1.png"} className="img-fluid" alt={"mecanica paso 1"} />
                     </div>
                     <div className="col-sm-8">
-                        <p className="tmeca p-0 ">Regístrate en <span>elcampanazonacional.com</span><br />
-                            ingrensando tus datos de contactos.</p>
+                        <p className="tmeca p-0 ms-2">Ingresa a: <img src={baseUrl+"assets/img/pasos-camapanzo-nacional.png"} className="img-fluid" alt={"pasos-camapanzo-nacional"} /> <br />
+                            regístrate y descarga tu cupón de descuento sorpresa.</p>
                     </div>
                 </div>
             </div>
             <div className="borderLine p-4 my-3 w-80 mx-auto ">
-                <div className="row d-flex align-items-center">
+                <div className="row d-flex align-items-center ">
                     <div className="col-sm-3 text-center">
                         <img src={baseUrl+"assets/img/meca-2.png"} className="img-fluid" alt={"mecanica paso 2"} />
                     </div>
-                    <div className="col-sm-6">
-                        <p className="tmeca p-0 ">En tu correo electrónico <span>descarga<br />
-          el bono</span> con el descuento sorpresa.</p>
-                    </div>
-                    <div className="col-sm-3 d-flex align-items-center">
-                        <img src={baseUrl+"assets/img/puntoR.png"} className="img-fluid me-3" alt={"mecanica paso 3"} />
-                            <p className="tmeca p-0 ">Revisa tu bandeja
-                                de correo no deseados.</p>
+                    <div className="col-sm-8">
+                        <p className="tmeca p-0">Utilízalo en cualquiera de nuestras sucursales o en compras online,
+                            y al momento de pagar, presenta tu cupón y descubre tu descuento sorpresa.</p>
                     </div>
                 </div>
             </div>
             <div className="borderLine p-4 my-3 w-80 mx-auto">
-                <div className="row d-flex align-items-center">
+                <div className="row d-flex align-items-center ">
+                    <div className="col-sm-3 text-center">
+                        <img src={baseUrl+"assets/img/puntoR.png"} className="img-fluid me-3" alt={"mecanica paso 3"} />
+                    </div>
+                    <div className="col-sm-8">
+                        <p className="tmeca p-0"><span>Para activar tu cupón:</span> tu compra debe ser de RD$3,000 o
+                            más,
+                            incluyendo 3 marcas patrocinadoras.</p>
+                    </div>
+                </div>
+            </div>
+            <div className="borderLine p-4 my-3 w-80 mx-auto">
+                <div className="row d-flex align-items-center ">
                     <div className="col-sm-3 text-center">
                         <img src={baseUrl+"assets/img/meca-3.png"} className="img-fluid" alt={"mecanica paso 4"} />
                     </div>
                     <div className="col-sm-8">
-                        <p className="tmeca p-0 ">Dirígite a <span>cualquier tienda Nacional</span> y<br />
-                            redímelo con tu descuento sorpresa.</p>
+                        <p className="tmeca p-0">Si realizas tu compra online: debes colocar el código del cupón
+                            en la casilla cupón de descuento.</p>
                     </div>
                 </div>
             </div>
