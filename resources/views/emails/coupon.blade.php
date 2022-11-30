@@ -98,7 +98,7 @@
                         <img style="display: block; border: 0;" src="{{asset('assets/mail/cupon_12_02.jpg')}}" width="41" height="29" alt="">
                     </td>
                     <td style="width: 400px; height: 29px; display: block; border: 0; margin: 0; padding: 0;  font-family: Helvetica, Sans-Serif, serif; font-style: italic; color: #fff; background-color: #174c22; font-size: 12px; font-weight: bold;">
-                        Este cupon es valido desde {{ $coupon->created_at->format('d M') }} hasta {{ ($coupon->expire_at->format('d')-1)." ".$coupon->expire_at->format('M') }} del 2022
+                        Este cupon es valido desde {{ $coupon->send_at->format('d M') }} hasta {{ ($coupon->expire_at->format('d')-1)." ".$coupon->expire_at->format('M') }} del 2022
                     </td>
                     <td style="width: 359px; height: 29px;">
                         <img style="display: block; border: 0;" src="{{asset('assets/mail/cupon_12_04.jpg')}}" width="359" height="29" alt="">
