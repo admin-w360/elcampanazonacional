@@ -55,14 +55,14 @@ const Register: FC = () => {
         const user = { ...appUserSelector.user, ...data };
         setLoading(true)
         saveRegister(user).then(function (response) {
-            if (!response?.error) {
+            if (response?.error === false && response?.results !== undefined) {
                  setLoading(false)
                  dispatch(setUser(user));
                  dispatch(setCouponCode(response?.results?.coupon_code));
                  dispatch(setCouponExpire(response?.results?.coupon_expire_at));
                  navigate('/site', {replace: true});
             } else {
-                setServerError(response?.error);
+                setServerError("Error enviando formulario, por favor verifique la información e intente de nuevo");
                 setLoading(false)
             }
         }).catch(function (error) {
