@@ -25,7 +25,7 @@ Trait HasCode
     }
 
     protected function forwarded(string $user_id): ?Coupon {
-        $coupon = Coupon::where('user_id', $user_id)->where('expire_at', '>=', now()->toDateString())->first();
+        $coupon = Coupon::where('user_id', $user_id)->where('expire_at', '>=', now()->toDateTimeString())->first();
         if($coupon) {
             $coupon->forwarded_at = now();
             $coupon->save();
