@@ -28,7 +28,7 @@ class UserRepository implements UserContract
      */
     public function login(AuthRequest $authRequest)
     {
-                    $user = User::firstOrNew([
+                    $user = User::updateOrCreate([
                         'document' => $authRequest->document,
                         'document_type' => $authRequest->document_type,
                     ],[
