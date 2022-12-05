@@ -55,16 +55,4 @@ class UserRequest extends FormRequest
     }
 
 
-    /**
-     * @param Validator $validator
-     */
-    protected function failedValidation(Validator $validator){
-        throw new HttpResponseException(
-            $this->error(
-                'Informacion de docuemnto invalido',
-                $validator->errors(),
-                Response::HTTP_UNPROCESSABLE_ENTITY,
-            )
-        );
-    }
 }

@@ -6,6 +6,7 @@ use App\Contracts\UserContract;
 use App\Http\Requests\AuthRequest;
 use App\Http\Requests\UserRequest;
 use App\Mail\CouponMail;
+use App\Models\AccessCount;
 use App\Models\User;
 use App\Traits\HasCode;
 use App\Traits\HasResponseJson;
@@ -121,13 +122,24 @@ class UserRepository implements UserContract
         if(Auth::check()) {
             $user = Auth::user();
             $ClientIp = isset($_SERVER['HTTP_X_FORWARDED_FOR']) && !empty($_SERVER['HTTP_X_FORWARDED_FOR']) ? $_SERVER['HTTP_X_FORWARDED_FOR'] : $authRequest->getClientIp();
-            $authRequest->merge(['ip_address' => $ClientIp]);
-            $user->update($authRequest->all());
-            $coupon = $this->generate($user->id);
-            if($coupon AND !empty($coupon->code)){
-                Mail::to($user)->send(new CouponMail($coupon));
+
+            $accessCount = AccessCount::firstOrCreate([
+                'address' => $ClientIp,
+                'date' => now()->toDateString()
+            ]);
+
+            if( ($accessCount->access+1) <= 3 ) {
+                $accessCount->increment('access');
+                $authRequest->merge(['ip_address' => $ClientIp]);
+                $user->update($authRequest->all());
+                $coupon = $this->generate($user->id);
+                if ($coupon and !empty($coupon->code)) {
+                      Mail::to($user)->send(new CouponMail($coupon));
+                }
+                return $this->success('Coupon registrado con exito', $coupon);
+            }else{
+                return $this->error('Access denied', 422);
             }
-            return $this->success('Coupon registrado con exito', $coupon);
         }else{
             return $this->error('Session caducada', 401);
         }
