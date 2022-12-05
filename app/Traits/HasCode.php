@@ -8,7 +8,7 @@ Trait HasCode
 {
 
     protected function generate(string $user_id): ?Coupon {
-        $coupon = Coupon::where('user_id', $user_id)->where('expire_at', '>=', now()->toDateString())->first();
+        $coupon = Coupon::where('user_id', $user_id)->where('expire_at', '>=', now()->toDateTimeString())->first();
         if(!$coupon){
             $coupon = Coupon::whereNull('user_id')->first() ;
         }
