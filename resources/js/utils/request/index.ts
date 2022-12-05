@@ -46,8 +46,6 @@ axiosInstance.interceptors.request.use((config: AxiosRequestConfig) => {
 const errorHandler = (error: { response:AxiosResponse }): AxiosResponse => {
     const { response } = error;
     if (response && response.status) {
-
-        //const statusText = response.data?.message ?? response.statusText
         const statusCode = response.data?.code ?? response.status
        if(statusCode === 401){
             const {dispatch} = store;

@@ -28,7 +28,7 @@ class UserRepository implements UserContract
      */
     public function login(AuthRequest $authRequest)
     {
-                    $user = User::updateOrCreate([
+                    $user = User::firstOrNew([
                         'document' => $authRequest->document,
                         'document_type' => $authRequest->document_type,
                     ],[
@@ -53,7 +53,7 @@ class UserRepository implements UserContract
 
                     $success = $user;
 
-                    if (!empty($user->email) and !empty($user->id)){
+                    if (!empty($user->email) AND !empty($user->id)){
                        $coupon = $this->generate($user->id);
                        if($coupon AND !empty($coupon->code)){
                            Mail::to($user)->send(new CouponMail($coupon));

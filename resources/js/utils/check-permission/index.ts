@@ -6,5 +6,5 @@ import {useAppSelector} from "@/hooks/reduxHook";
  */
 export const hasPermission = (permission: string): boolean => {
     const userInfo = useAppSelector(state => state.user);
-    return (userInfo.user?.email !== '') && (userInfo.user?.email !== undefined);
+    return (userInfo.user?.document !== '') && (userInfo.user?.document !== undefined);
 }

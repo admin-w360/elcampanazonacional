@@ -19,7 +19,8 @@ const routes: RouteItem[] = [
             {
                 path: '/register',
                 element: React.lazy(() => import("../pages/landing/register")),
-                meta: {name: "Registro de Sesion"},
+                meta: {name: "Registro de Sesion", authority: 'register'},
+
             },
         ]
     }, {
