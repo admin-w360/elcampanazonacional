@@ -1,27 +1,27 @@
 {
-  "resources/fonts/AmsiPro-Bold.ttf": {
-    "file": "assets/AmsiPro-Bold.5140821c.ttf",
-    "src": "resources/fonts/AmsiPro-Bold.ttf"
-  },
   "resources/fonts/AmsiProCond-BoldItalic.ttf": {
     "file": "assets/AmsiProCond-BoldItalic.5bf3a7f2.ttf",
     "src": "resources/fonts/AmsiProCond-BoldItalic.ttf"
+  },
+  "resources/fonts/AmsiPro-Bold.ttf": {
+    "file": "assets/AmsiPro-Bold.5140821c.ttf",
+    "src": "resources/fonts/AmsiPro-Bold.ttf"
   },
   "resources/img/menu-down.svg": {
     "file": "assets/menu-down.dc0f785b.svg",
     "src": "resources/img/menu-down.svg"
   },
-  "resources/fonts/Gobold Uplow.otf": {
-    "file": "assets/Gobold Uplow.60f56d93.otf",
-    "src": "resources/fonts/Gobold Uplow.otf"
+  "resources/fonts/AmsiPro-Ultra.ttf": {
+    "file": "assets/AmsiPro-Ultra.8e71886f.ttf",
+    "src": "resources/fonts/AmsiPro-Ultra.ttf"
   },
   "resources/fonts/AmsiProCond-UltraItalic.ttf": {
     "file": "assets/AmsiProCond-UltraItalic.399ada2d.ttf",
     "src": "resources/fonts/AmsiProCond-UltraItalic.ttf"
   },
-  "resources/fonts/AmsiPro-Ultra.ttf": {
-    "file": "assets/AmsiPro-Ultra.8e71886f.ttf",
-    "src": "resources/fonts/AmsiPro-Ultra.ttf"
+  "resources/fonts/Gobold Uplow.otf": {
+    "file": "assets/Gobold Uplow.60f56d93.otf",
+    "src": "resources/fonts/Gobold Uplow.otf"
   },
   "resources/img/back-texture.png": {
     "file": "assets/back-texture.47221981.png",
