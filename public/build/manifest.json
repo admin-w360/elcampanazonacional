@@ -3,10 +3,6 @@
     "file": "assets/AmsiPro-Bold.5140821c.ttf",
     "src": "resources/fonts/AmsiPro-Bold.ttf"
   },
-  "resources/fonts/AmsiProCond-UltraItalic.ttf": {
-    "file": "assets/AmsiProCond-UltraItalic.399ada2d.ttf",
-    "src": "resources/fonts/AmsiProCond-UltraItalic.ttf"
-  },
   "resources/fonts/AmsiProCond-BoldItalic.ttf": {
     "file": "assets/AmsiProCond-BoldItalic.5bf3a7f2.ttf",
     "src": "resources/fonts/AmsiProCond-BoldItalic.ttf"
@@ -14,6 +10,14 @@
   "resources/fonts/AmsiPro-Ultra.ttf": {
     "file": "assets/AmsiPro-Ultra.8e71886f.ttf",
     "src": "resources/fonts/AmsiPro-Ultra.ttf"
+  },
+  "resources/fonts/AmsiProCond-UltraItalic.ttf": {
+    "file": "assets/AmsiProCond-UltraItalic.399ada2d.ttf",
+    "src": "resources/fonts/AmsiProCond-UltraItalic.ttf"
+  },
+  "resources/img/back-texture.png": {
+    "file": "assets/back-texture.47221981.png",
+    "src": "resources/img/back-texture.png"
   },
   "resources/fonts/Gobold Uplow.otf": {
     "file": "assets/Gobold Uplow.60f56d93.otf",
@@ -23,20 +27,13 @@
     "file": "assets/menu-down.dc0f785b.svg",
     "src": "resources/img/menu-down.svg"
   },
-  "resources/img/back-texture.png": {
-    "file": "assets/back-texture.47221981.png",
-    "src": "resources/img/back-texture.png"
-  },
   "resources/js/index.tsx": {
-    "file": "assets/index.0ec0637b.js",
+    "file": "assets/index.2e20d766.js",
     "src": "resources/js/index.tsx",
     "isEntry": true,
     "dynamicImports": [
-      "resources/js/layout/landing/index.tsx",
-      "resources/js/pages/landing/login/index.tsx",
-      "resources/js/pages/landing/register/index.tsx",
       "resources/js/layout/main/index.tsx",
-      "resources/js/pages/sites/home/index.tsx",
+      "resources/js/pages/landing/close/index.tsx",
       "resources/js/pages/sites/terms/index.tsx",
       "resources/js/pages/sites/mechanics/index.tsx",
       "resources/js/pages/sites/brands/index.tsx",
@@ -55,126 +52,63 @@
       "assets/back-texture.47221981.png"
     ]
   },
-  "resources/js/layout/landing/index.tsx": {
-    "file": "assets/index.341d1d0f.js",
-    "src": "resources/js/layout/landing/index.tsx",
-    "isDynamicEntry": true,
-    "imports": [
-      "resources/js/index.tsx",
-      "_index.65dd5133.js"
-    ]
-  },
-  "_index.65dd5133.js": {
-    "file": "assets/index.65dd5133.js",
-    "imports": [
-      "resources/js/index.tsx"
-    ]
-  },
-  "resources/js/pages/landing/login/index.tsx": {
-    "file": "assets/index.43a9fbfd.js",
-    "src": "resources/js/pages/landing/login/index.tsx",
-    "isDynamicEntry": true,
-    "imports": [
-      "resources/js/index.tsx",
-      "_pageHook.4f2356db.js",
-      "_InputText.9c2f5139.js",
-      "_index.5deda9ed.js",
-      "_Spinner.f5f582ad.js"
-    ]
-  },
-  "_pageHook.4f2356db.js": {
-    "file": "assets/pageHook.4f2356db.js",
-    "imports": [
-      "resources/js/index.tsx"
-    ]
-  },
-  "_InputText.9c2f5139.js": {
-    "file": "assets/InputText.9c2f5139.js",
-    "imports": [
-      "resources/js/index.tsx"
-    ]
-  },
-  "_index.5deda9ed.js": {
-    "file": "assets/index.5deda9ed.js",
-    "imports": [
-      "resources/js/index.tsx",
-      "_InputText.9c2f5139.js"
-    ]
-  },
-  "_Spinner.f5f582ad.js": {
-    "file": "assets/Spinner.f5f582ad.js",
-    "imports": [
-      "_InputText.9c2f5139.js",
-      "resources/js/index.tsx"
-    ]
-  },
-  "resources/js/pages/landing/register/index.tsx": {
-    "file": "assets/index.5074bf86.js",
-    "src": "resources/js/pages/landing/register/index.tsx",
-    "isDynamicEntry": true,
-    "imports": [
-      "resources/js/index.tsx",
-      "_pageHook.4f2356db.js",
-      "_InputText.9c2f5139.js",
-      "_Spinner.f5f582ad.js"
-    ]
-  },
   "resources/js/layout/main/index.tsx": {
-    "file": "assets/index.bfaba71c.js",
+    "file": "assets/index.49b36002.js",
     "src": "resources/js/layout/main/index.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_index.65dd5133.js",
       "resources/js/index.tsx"
     ]
   },
-  "resources/js/pages/sites/home/index.tsx": {
-    "file": "assets/index.1af54d4e.js",
-    "src": "resources/js/pages/sites/home/index.tsx",
+  "resources/js/pages/landing/close/index.tsx": {
+    "file": "assets/index.fffc1726.js",
+    "src": "resources/js/pages/landing/close/index.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "resources/js/index.tsx",
-      "_pageHook.4f2356db.js",
-      "_InputText.9c2f5139.js",
-      "_Spinner.f5f582ad.js"
+      "_pageHook.977d27d8.js",
+      "resources/js/index.tsx"
+    ]
+  },
+  "_pageHook.977d27d8.js": {
+    "file": "assets/pageHook.977d27d8.js",
+    "imports": [
+      "resources/js/index.tsx"
     ]
   },
   "resources/js/pages/sites/terms/index.tsx": {
-    "file": "assets/index.d2942367.js",
+    "file": "assets/index.4b082b64.js",
     "src": "resources/js/pages/sites/terms/index.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_pageHook.4f2356db.js",
+      "_pageHook.977d27d8.js",
       "resources/js/index.tsx"
     ]
   },
   "resources/js/pages/sites/mechanics/index.tsx": {
-    "file": "assets/index.e3514446.js",
+    "file": "assets/index.e80ff60c.js",
     "src": "resources/js/pages/sites/mechanics/index.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_pageHook.4f2356db.js",
+      "_pageHook.977d27d8.js",
       "resources/js/index.tsx"
     ]
   },
   "resources/js/pages/sites/brands/index.tsx": {
-    "file": "assets/index.f45e987d.js",
+    "file": "assets/index.e58e8dc1.js",
     "src": "resources/js/pages/sites/brands/index.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_pageHook.4f2356db.js",
+      "_pageHook.977d27d8.js",
       "resources/js/index.tsx"
     ]
   },
   "resources/js/pages/sites/contacts/index.tsx": {
-    "file": "assets/index.06881dfa.js",
+    "file": "assets/index.b59016c2.js",
     "src": "resources/js/pages/sites/contacts/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/index.tsx",
-      "_pageHook.4f2356db.js",
-      "_InputText.9c2f5139.js",
-      "_index.5deda9ed.js"
+      "_pageHook.977d27d8.js"
     ]
   },
   "resources/css/style.css": {
@@ -182,13 +116,13 @@
     "src": "resources/css/style.css",
     "isEntry": true
   },
+  "resources/js/index.css": {
+    "file": "assets/index.7031f953.css",
+    "src": "resources/js/index.css"
+  },
   "resources/sass/app.scss": {
     "file": "assets/app.05aca718.css",
     "src": "resources/sass/app.scss",
     "isEntry": true
-  },
-  "resources/js/index.css": {
-    "file": "assets/index.7031f953.css",
-    "src": "resources/js/index.css"
   }
 }

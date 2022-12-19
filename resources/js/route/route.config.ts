@@ -7,11 +7,16 @@ import {RouteItem} from "@/route/type";
  */
 const routes: RouteItem[] = [
     {
-        path: "/",
-        element: React.lazy(() => import("../layout/landing")),
+        path: "*",
+        element: React.lazy(() => import("../layout/main")),
         meta: {name: "Incio"},
         children: [
             {
+                index: true,
+                element: React.lazy(() => import("../pages/landing/close")),
+                meta: {name: "Gracias"},
+            },
+          /*  {
                 index: true,
                 element: React.lazy(() => import("../pages/landing/login")),
                 meta: {name: "Inicio de Sesion"},
@@ -21,7 +26,7 @@ const routes: RouteItem[] = [
                 element: React.lazy(() => import("../pages/landing/register")),
                 meta: {name: "Registro de Sesion"},
 
-            },
+            }, */
         ]
     }, {
         path: "/site",
@@ -30,9 +35,14 @@ const routes: RouteItem[] = [
         children: [
             {
                 index: true,
+                element: React.lazy(() => import("../pages/landing/close")),
+                meta: {name: "Gracias"},
+            },
+          /*  {
+                index: true,
                 element: React.lazy(() => import("../pages/sites/home")),
                 meta: {name: "Inicio de Sesion"},
-            },
+            }, */
             {
                 path: 'terms',
                 element: React.lazy(() => import("../pages/sites/terms")),
