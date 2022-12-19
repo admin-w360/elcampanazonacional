@@ -18,7 +18,8 @@ Route::get('/', function () {
     return view('mail', ['coupon' => $coupon]);
 }); **/
 
-
+/*
 Route::view('/{path?}', 'app')
     ->where('path', '.*')
     ->name('react-app');
+*/
